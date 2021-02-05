@@ -8,6 +8,7 @@
  * getOdds([1, 2, 3, 4, 5, 6, 7, 8, 9]) -> [1, 3, 5, 7, 9]
  * getOdds([11, 35, 52, 14, 56, 601, 777, 888, 999]) -> [11, 35, 601, 777, 999]
  */
+
 let numbers = [11, 35, 52, 14, 56, 601, 52, 777, 888, 999, 52];
 
 let getOdds = numbers.filter((num) => {
@@ -25,11 +26,11 @@ console.log(getOdds);
  * getEvens([1, 2, 3, 4, 5, 6, 7, 8, 9]) -> [2, 4, 6, 8]
  * getEvens([11, 35, 52, 14, 56, 601, 777, 888, 999]) -> [52, 14, 56, 888]
  */
+
 let getEvens = numbers.filter((num) => {
   return num%2===0
   });
   console.log(getEvens);
-  
 
 /**
  * countOccurences(x, numbers):
@@ -42,6 +43,7 @@ let getEvens = numbers.filter((num) => {
  */
 
 let x = 52;
+
 let countOccurences = numbers.filter((num) => {
   return num === x;
 });
