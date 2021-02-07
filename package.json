@@ -13,7 +13,10 @@
     "test-ci": "CI=true jest"
   },
   "dependencies": {
+    "-": "0.0.1",
     "@babel/preset-env": "^7.12.11",
-    "babel-core": "^6.26.3"
+    "babel-core": "^6.26.3",
+    "global": "^4.4.0",
+    "yarn": "^1.22.10"
   }
 }

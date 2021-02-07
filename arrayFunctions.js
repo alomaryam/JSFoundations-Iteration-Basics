@@ -11,10 +11,12 @@
 
 let numbers = [11, 35, 52, 14, 56, 601, 52, 777, 888, 999, 52];
 
-let getOdds = numbers.filter((num) => {
+function getOdds(numbers){
+return numbers.filter(num => {
 return num%2===1;
 });
-console.log(getOdds);
+};
+console.log(getOdds(numbers))
 
 /**
  * getEvens(numbers):
@@ -27,10 +29,12 @@ console.log(getOdds);
  * getEvens([11, 35, 52, 14, 56, 601, 777, 888, 999]) -> [52, 14, 56, 888]
  */
 
-let getEvens = numbers.filter((num) => {
-  return num%2===0
+function getEvens(numbers){
+  return numbers.filter((num) => {
+  return num%2===0;
   });
-  console.log(getEvens);
+};
+  console.log(getEvens(numbers));
 
 /**
  * countOccurences(x, numbers):
@@ -44,10 +48,12 @@ let getEvens = numbers.filter((num) => {
 
 let x = 52;
 
-let countOccurences = numbers.filter((num) => {
+function countOccurences (numbers){
+  return numbers.filter((num) => {
   return num === x;
 });
-console.log(countOccurences.length);
+};
+console.log(countOccurences(numbers).length);
 
 /**
  * makeThemDoctors(students):
@@ -60,9 +66,11 @@ console.log(countOccurences.length);
 
  let students = ["Ali", "Aseel", "Richard"];
 
- let makeThemDoctors = students.map((doctor) => {
+function makeThemDoctors (students) {
+   return students.map((doctor) => {
    return `Dr. ${doctor}`;
  });
+};
 
-console.log(makeThemDoctors);
+console.log(makeThemDoctors(students));
 module.exports = { getOdds, getEvens, countOccurences, makeThemDoctors };
